@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E55527FC26328FDB003DC641 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E55527FB26328FDB003DC641 /* main.cpp */; };
 		E590B9B8263135A40073CBA6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E590B9B7263135A40073CBA6 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		E55527F726328FDB003DC641 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		E590B9B2263135A40073CBA6 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,12 +51,22 @@
 
 /* Begin PBXFileReference section */
 		E55527EC2632884A003DC641 /* Input output of User-Defined Types.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Input output of User-Defined Types.xcodeproj"; path = "Input output of User-Defined Types/Input output of User-Defined Types.xcodeproj"; sourceTree = "<group>"; };
+		E55527F926328FDB003DC641 /* containers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = containers; sourceTree = BUILT_PRODUCTS_DIR; };
+		E55527FB26328FDB003DC641 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E555280226329031003DC641 /* Contact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		E590B9B4263135A40073CBA6 /* Tour of C++ Containers and Algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Tour of C++ Containers and Algorithms"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E590B9B7263135A40073CBA6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E590B9D22631401C0073CBA6 /* o.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = o.xcodeproj; path = o/o.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E55527F626328FDB003DC641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E590B9B1263135A40073CBA6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -65,12 +85,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		E55527FA26328FDB003DC641 /* containers */ = {
+			isa = PBXGroup;
+			children = (
+				E55527FB26328FDB003DC641 /* main.cpp */,
+				E555280226329031003DC641 /* Contact.h */,
+			);
+			path = containers;
+			sourceTree = "<group>";
+		};
 		E590B9AB263135A40073CBA6 = {
 			isa = PBXGroup;
 			children = (
 				E55527EC2632884A003DC641 /* Input output of User-Defined Types.xcodeproj */,
 				E590B9D22631401C0073CBA6 /* o.xcodeproj */,
 				E590B9B6263135A40073CBA6 /* Tour of C++ Containers and Algorithms */,
+				E55527FA26328FDB003DC641 /* containers */,
 				E590B9B5263135A40073CBA6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				E590B9B4263135A40073CBA6 /* Tour of C++ Containers and Algorithms */,
+				E55527F926328FDB003DC641 /* containers */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +133,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E55527F826328FDB003DC641 /* containers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E55527FD26328FDB003DC641 /* Build configuration list for PBXNativeTarget "containers" */;
+			buildPhases = (
+				E55527F526328FDB003DC641 /* Sources */,
+				E55527F626328FDB003DC641 /* Frameworks */,
+				E55527F726328FDB003DC641 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = containers;
+			productName = containers;
+			productReference = E55527F926328FDB003DC641 /* containers */;
+			productType = "com.apple.product-type.tool";
+		};
 		E590B9B3263135A40073CBA6 /* Tour of C++ Containers and Algorithms */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E590B9BB263135A40073CBA6 /* Build configuration list for PBXNativeTarget "Tour of C++ Containers and Algorithms" */;
@@ -127,6 +175,9 @@
 			attributes = {
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					E55527F826328FDB003DC641 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					E590B9B3263135A40073CBA6 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -156,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				E590B9B3263135A40073CBA6 /* Tour of C++ Containers and Algorithms */,
+				E55527F826328FDB003DC641 /* containers */,
 			);
 		};
 /* End PBXProject section */
@@ -178,6 +230,14 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E55527F526328FDB003DC641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E55527FC26328FDB003DC641 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E590B9B0263135A40073CBA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,6 +249,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		E55527FE26328FDB003DC641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6EA52N78QZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E55527FF26328FDB003DC641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6EA52N78QZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		E590B9B9263135A40073CBA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -323,6 +403,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E55527FD26328FDB003DC641 /* Build configuration list for PBXNativeTarget "containers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E55527FE26328FDB003DC641 /* Debug */,
+				E55527FF26328FDB003DC641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E590B9AF263135A40073CBA6 /* Build configuration list for PBXProject "Tour of C++ Containers and Algorithms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
