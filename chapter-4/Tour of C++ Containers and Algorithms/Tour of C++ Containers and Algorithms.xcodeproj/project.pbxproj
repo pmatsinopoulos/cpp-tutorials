@@ -14,6 +14,7 @@
 		E549BE122633E0EF00735659 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E549BE112633E0EF00735659 /* main.cpp */; };
 		E55527FC26328FDB003DC641 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E55527FB26328FDB003DC641 /* main.cpp */; };
 		E590B9B8263135A40073CBA6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E590B9B7263135A40073CBA6 /* main.cpp */; };
+		E5C8DC9B26342062008610AF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E5C8DC9A26342062008610AF /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		E5C8DC9626342062008610AF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +132,8 @@
 		E590B9B4263135A40073CBA6 /* Tour of C++ Containers and Algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Tour of C++ Containers and Algorithms"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E590B9B7263135A40073CBA6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E590B9D22631401C0073CBA6 /* o.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = o.xcodeproj; path = o/o.xcodeproj; sourceTree = "<group>"; };
+		E5C8DC9826342062008610AF /* stream iterators */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "stream iterators"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5C8DC9A26342062008610AF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +180,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E590B9B1263135A40073CBA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5C8DC9526342062008610AF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -251,6 +270,7 @@
 				E549BDE22633D86F00735659 /* Unorderd Maps */,
 				E549BDF82633DB4300735659 /* algorithms */,
 				E549BE102633E0EF00735659 /* find all */,
+				E5C8DC9926342062008610AF /* stream iterators */,
 				E590B9B5263135A40073CBA6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -265,6 +285,7 @@
 				E549BDE12633D86F00735659 /* Unorderd Maps */,
 				E549BDF72633DB4300735659 /* algorithms */,
 				E549BE0F2633E0EF00735659 /* find all */,
+				E5C8DC9826342062008610AF /* stream iterators */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -283,6 +304,14 @@
 				E590B9D72631401D0073CBA6 /* o */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E5C8DC9926342062008610AF /* stream iterators */ = {
+			isa = PBXGroup;
+			children = (
+				E5C8DC9A26342062008610AF /* main.cpp */,
+			);
+			path = "stream iterators";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,6 +436,23 @@
 			productReference = E590B9B4263135A40073CBA6 /* Tour of C++ Containers and Algorithms */;
 			productType = "com.apple.product-type.tool";
 		};
+		E5C8DC9726342062008610AF /* stream iterators */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5C8DCA026342062008610AF /* Build configuration list for PBXNativeTarget "stream iterators" */;
+			buildPhases = (
+				E5C8DC9426342062008610AF /* Sources */,
+				E5C8DC9526342062008610AF /* Frameworks */,
+				E5C8DC9626342062008610AF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "stream iterators";
+			productName = "stream iterators";
+			productReference = E5C8DC9826342062008610AF /* stream iterators */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -434,6 +480,9 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					E590B9B3263135A40073CBA6 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					E5C8DC9726342062008610AF = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -468,6 +517,7 @@
 				E549BDE02633D86F00735659 /* Unorderd Maps */,
 				E549BDF62633DB4300735659 /* algorithms */,
 				E549BE0E2633E0EF00735659 /* find all */,
+				E5C8DC9726342062008610AF /* stream iterators */,
 			);
 		};
 /* End PBXProject section */
@@ -543,6 +593,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E590B9B8263135A40073CBA6 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5C8DC9426342062008610AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5C8DC9B26342062008610AF /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -806,6 +864,28 @@
 			};
 			name = Release;
 		};
+		E5C8DC9C26342062008610AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6EA52N78QZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E5C8DC9D26342062008610AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6EA52N78QZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -877,6 +957,15 @@
 			buildConfigurations = (
 				E590B9BC263135A40073CBA6 /* Debug */,
 				E590B9BD263135A40073CBA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5C8DCA026342062008610AF /* Build configuration list for PBXNativeTarget "stream iterators" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5C8DC9C26342062008610AF /* Debug */,
+				E5C8DC9D26342062008610AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
