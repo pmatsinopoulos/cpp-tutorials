@@ -30,6 +30,15 @@ int get_number(const list<Entry>& phone_book, const string name) {
   return -1;
 }
 
+int get_number2(const list<Entry>& phone_book, const string name) {
+  for (auto entry = phone_book.begin(); entry != phone_book.end(); entry++) {
+    if (entry->name == name) {
+      return entry->number;
+    }
+  }
+  return -1;
+}
+
 int main(int argc, const char * argv[]) {
   list<Entry> phone_book = {
     {"David Hume", 123456},
@@ -40,6 +49,7 @@ int main(int argc, const char * argv[]) {
   print_phone_book(phone_book);
   
   cout << get_number(phone_book, "Karl Popper") << endl;
+  cout << get_number2(phone_book, "Bertrand Arthur William Russell") << endl;
   
   return 0;
 }
