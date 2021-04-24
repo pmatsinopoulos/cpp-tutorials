@@ -37,6 +37,10 @@ list<Entry> f(vector<Entry>& v_entries) {
   return result;
 }
 
+bool has_entry(const list<Entry>&l_entries, const Entry& entry) {
+  return find(l_entries.begin(), l_entries.end(), entry) != l_entries.end();
+}
+
 int main(int argc, const char * argv[]) {
 
   vector<Entry> v_entries {
@@ -57,6 +61,9 @@ int main(int argc, const char * argv[]) {
   for(auto entry: l_entries) {
     cout << entry << endl;
   }
+  
+  cout << has_entry(l_entries, {"Mary", 3636727}) << endl;
+  cout << has_entry(l_entries, {"Foo", 3636727}) << endl;
   
   return 0;
 }
