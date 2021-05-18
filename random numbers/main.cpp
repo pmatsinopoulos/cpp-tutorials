@@ -7,19 +7,38 @@
 
 #include <iostream>
 #include <random>
+#include <vector>
 
 using namespace std;
-using my_engine = default_random_engine;
-using my_distribution = uniform_int_distribution<>;
+
+class Rand_int {
+  random_device r;
+  default_random_engine re;
+  uniform_int_distribution<int> dist;
+public:
+  Rand_int(int s, int e):dist { s, e } {
+    re.seed(r());
+  }
+  int operator()() {
+    return dist(re);
+  }
+};
 
 int main(int argc, const char * argv[]) {
-  my_engine re {}; // the default engine
-  my_distribution one_to_six { 1, 6 };
-  auto die = bind(one_to_six, re);
+  vector<int> histogram(5);
+  Rand_int rnd { 0, 4 };
   
-  int x = die();
+  for (int i = 0; i != 200; i++) {
+    histogram[rnd()]++;
+  }
   
-  cout << x << endl;
-    
+  for (int j = 0; j < histogram.size(); j++) {
+    cout << j << " : ";
+    for (int k = 1; k <= histogram[j]; k++) {
+      cout << "*";
+    }
+    cout << endl;
+  }
+  
   return 0;
 }
